@@ -1,0 +1,801 @@
+@charset "utf-8";
+
+body{
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight:bold ;
+  
+  width: 1366px;
+  height: 4564px;
+  margin: auto;
+
+}
+header{
+  margin-top: 24px;
+margin-bottom: 24px;
+}
+
+header a:hover{
+  filter: sepia(100%);
+}
+
+.yrk  a:hover{
+  filter: sepia(100%); 
+}
+
+.list-1{
+filter: drop-shadow(1px 2px 3px #ddd );
+}
+
+.hero2{
+  width: 1366px;
+  height: 545px;
+  background-image: url(../images/hero\ 2.png);
+}
+
+.egao .ep{
+  text-align: left;
+}
+
+
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: .05em;
+}
+
+
+h3{
+ margin: 20px;
+  font-size: 28px;  
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.yrk img{
+  margin-bottom: 16px;
+}
+
+
+.smalla{
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 56px;
+}
+
+
+.egao
+{padding-top: 160px;
+  text-align: center; 
+  margin:0 173px;
+}
+
+.yrk{
+display: flex;
+margin-bottom: 20px;
+text-align: left;
+justify-content: space-evenly;
+}
+
+
+.kichi .small{
+  margin: -99px;
+}
+
+.sekou{
+  margin-top: 48px;
+}
+
+.navigation ul li a:hover{
+text-decoration: underline;
+}
+
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
+
+
+}
+
+
+.navigation li {
+margin: 10px;
+margin-top: -10px;
+padding: 10px;
+font-size: 16px;
+}
+
+.gMenu .menu-btn {
+  display: none;
+}
+
+li a:hover{
+  text-decoration: underline;
+}
+
+.nagare li{
+  width: 60px;
+  height: 280px;
+
+  border-radius: 100px;
+  background-color:#333333;
+
+  font-weight: bold;
+  color: #ffffff;
+
+  text-align: center;
+  font-size: 30px;
+
+}
+
+
+.sekou{
+  padding-top: 160px;
+  background-color: rgba(34,62,105,0.08);
+  width: 1366px;
+  height: 800px;
+  justify-content: center;
+
+}
+
+
+.sekou ul{
+  writing-mode: vertical-rl;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 56px;
+  width: 1366px;
+  height: 498px;
+}
+
+ .sekou li{
+margin: 0 112px 0 0;
+text-align: center;
+padding: 16px;
+
+ }
+
+ .sekou li:hover{
+  filter: sepia(100%);
+  }
+  
+  
+
+
+.arrow{
+  padding-top: 100px;
+  margin: 0 24px 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.small img{
+float: right;
+margin-right: -10px;
+margin-top: 4px;
+}
+
+.SER{
+  padding-top: 160px; 
+}
+.small{
+  float: right;
+  padding-bottom: 160px;
+
+}
+.QAT{
+  text-align: center; 
+}
+
+
+.QA p{
+  text-align: left;
+  padding: 10px;
+  margin: auto;
+
+  }
+  
+
+.QA{
+  padding-top: -160px;
+  margin: 173px 0 0 173px ;
+  width: 1020px;
+  height: 429px;
+  text-align: center;
+  margin-bottom: 160px; 
+}
+
+.SQA{
+  font-size: 16px; 
+}
+
+.QA em{
+  font-size: 34px;
+  text-align: center;
+  border-radius: 50%;
+  
+}
+
+.QA em{
+  font-size: 34px;
+  text-align: center;
+
+}
+
+.ans{
+ color: #B71B26;
+  border-radius: 20%;
+}
+
+.que{
+  color: #333333;
+  border-radius: 20%;
+}
+
+
+.line-2{
+  margin: 24px;
+}
+
+.line-1{
+  margin: 24px;
+}
+
+.innerWrap {
+  padding-top: 160px;
+  background-color: rgba(34,62,105,0.08);
+  width: 100%;
+  height: 1366px;
+  margin: auto;
+  margin-bottom: 281px;
+}
+
+
+form{
+
+  width: 1000px;
+  height: 1020px;
+  margin-top: 100px;
+  margin: 70px 70px;
+  margin:  auto;
+}
+
+.toi{
+  padding: 47px;
+}
+
+.CONTACT{
+  margin-top: -48px;
+  margin-bottom: 48px;
+  font-size: 42px;
+}
+
+.submitBtn {
+  text-align: center;
+margin:87.5px;
+
+}
+input[type="submit"] {
+  background-color: #223E69;
+  color: #ffffff;
+  padding: 18px 80px;
+
+}
+
+.innerWrap em {
+  display: inline;
+  background-color: #B71B26;
+  padding: 3px 5px ;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #FFF;
+}
+
+p{
+  font-size: 16px;
+  margin: auto;
+  margin-top: 10px;
+  padding: auto;
+}
+
+.mail{
+
+  padding-top: 48px;
+
+}
+
+footer{
+  background-color: #333333;;
+  text-align: center;
+  color: #ffffff;
+  width: 1366px;
+  height: 62px;
+  padding: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #333333;
+  margin-left: 20px;
+  transition-property: background-color,margin-left;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  transition-delay: 0ms;
+}
+
+textarea{
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  height: 208px;
+  width: 664px;
+  margin-bottom: 30px;
+  }
+
+input[type="text"],
+input[type="email"],
+select,
+textarea
+ {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  font-size: 20px;
+  height: 52px;
+  width: 332px;
+}
+
+.innerWrap textarea
+{
+  height: 208px;
+  width: 664px; 
+}
+
+.toi{
+  height: 1000px;
+  width: 1020px; 
+  background-color: #FFF;
+  margin: auto;
+
+}
+
+b{
+font-size: 16px;
+}
+
+.photo1{
+  background-image: url(../images/list-1-img.png);
+  width: 351px;
+  height: 246.29px;
+}
+
+.photo2 {
+  background-image: url(../images/list-2-img.png);
+  width: 351px;
+  height: 246.29px;
+}
+
+.photo3{
+  background-image: url(../images/list-3-img.png);
+  width: 351px;
+  height: 246.29px;
+}
+
+
+.arrow{
+  padding-top: 100px;
+  margin: 0 24px 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.sekou ul{
+  margin-left: -100px;
+}
+
+.sekou li img{
+  margin: 0 41px 0 0
+    }
+
+
+
+/* .gosoudan{
+  display: none;
+} */
+
+@media screen  and (max-width:768px)
+ {
+
+  .sekou h2{
+    margin: 16px 100px 100px  ;
+    font-size: 28px;  
+    margin-bottom: 44px;
+   position: absolute;
+     } 
+   
+ 
+ 
+ 
+  h2{
+ font-size: 28px;  
+ margin-bottom: 44px;
+
+  } 
+
+  h3{
+font-size: 20px;
+margin-top: 48px;
+}
+
+.yoku h3
+{
+margin-top: 8px;
+}
+
+.kichi h3
+{
+  margin-top: 8px; 
+}
+
+.ribi h3
+{
+  margin-top: 8px;   
+}
+
+.small{
+  margin-bottom: 48px;
+}
+
+
+.smalla{
+  margin-bottom: -20px;
+}
+
+.toi p{
+width: 351px;
+margin: auto;
+padding: auto;
+}
+
+.line-2{
+margin-top: -15px;
+}
+  .hero2{
+    width: 375px;
+    height: 480px;
+    margin: -45px 0 0 0 ;
+    background-image: url(../images/hero\ 3.png);
+  }
+  
+   
+  body{
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight:bold ;
+  width: 375px;
+  height: 4289px;
+  margin: auto;
+}
+
+header{
+  width: 375px;
+  height: 51.71px;
+  padding-top: -16px;
+}
+
+header img{
+  width: 240px;
+  height: 19.71px; 
+  padding-left: 21px;
+}
+
+
+
+.photo1{
+  background-image: url(../images/list-1-img.png);
+  width: 351px;
+  height: 246.29px;
+  margin-bottom: 8px;
+  margin-top: 48px;
+}
+
+.photo2 {
+  background-image: url(../images/list-2-img.png);
+  width: 351px;
+  height: 246.29px;
+  margin-bottom: 8px;
+  margin-top: 48px;
+}
+
+.photo3{
+  background-image: url(../images/list-3-img.png);
+  width: 351px;
+  height: 246.29px;
+  margin-bottom: 8px;
+    margin-top: 48px;
+}
+
+.egao{
+  flex-wrap: wrap; 
+  width: 351px;
+  height: 220px;
+  justify-content: center;
+  margin: auto;
+  padding-top: 48px;
+}
+.yrk{
+  flex-wrap: wrap;
+}
+
+.toi .user_mail{
+  font-size: 16px;
+  width: 100%;
+  height: 912px;
+  margin: auto;
+  padding: auto;
+  /* overflow-x: hidden ;  */
+}
+
+.toi p{
+  margin: 25px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+
+.QA{
+  flex-wrap: wrap; 
+  width: 351px;
+  height: 421.11px; 
+  justify-content: center;
+  margin: auto;
+  padding-top: 80px;
+}
+
+
+
+.que0{
+  margin: 25px;
+  text-align: left;
+  font-size: 16px;
+
+}
+
+.CONTACT{
+  margin-top: 16px;
+  margin-bottom: 172.02x;
+  font-size: 16px;
+
+}
+
+
+.sekou{
+  padding-top: 50px;
+  width: 100%;
+  height: 600px;
+
+  overflow-x:  scroll ;
+  overflow-y:  hidden ;
+   
+  }
+
+.sekou ul{
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 56px;
+ width: 1366px;
+
+ }
+
+ .sekou li{
+/* margin: 0 112px 0 0; */
+text-align: center;
+/* padding: 16px; */
+text-align: center;
+writing-mode:unset;
+display: inline-block;
+
+
+
+
+ }
+
+ .sekou li img{
+ margin: 0 41px 0 0
+
+   }
+
+
+
+ .sekou .word{
+  margin-right: 10px;
+ }
+
+
+.arrow{
+  padding-top: 100px;
+  margin: 0 24px 0 0;
+ 
+  justify-content: space-around;
+}
+
+footer{
+
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  background-color: #333333;
+}
+
+input{
+  margin:  0 -87.5px;
+}
+
+nput[type="submit"]:hover {
+  background-color: #5c5a5a;
+  margin-left: 20px;
+  transition-property: background-color,margin-left;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  transition-delay: 0ms;
+
+
+}
+
+textarea{
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  height: 120px;
+ 
+  margin-bottom: 30px;
+  padding: auto;
+  margin: auto;
+    width: 100%;
+  }
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  font-size: 20px;
+  height: 52px;
+  width: 100%;
+  padding: auto;
+  margin: auto;
+
+}
+
+.innerWrap textarea{
+text-align: center;
+margin: auto;
+padding: auto;
+width: 100%;
+}
+
+.toi{
+width: 100vh;
+}
+
+.innerWrap {
+
+  width: 375px;
+  margin: 16px 0 0 0;
+  padding: auto;
+  background-color: #FFF;
+
+}
+
+.navigation a{
+  display: none;
+
+}
+.yrk{
+  display: block;
+  margin-bottom: 20px;
+  margin: 12px 0 0 12px;
+  text-align: left;
+  padding: auto; 
+  }
+
+.sekou ul{
+  margin-left: -300px;
+  /* writing-mode:unset; */
+ 
+
+}
+
+
+
+/* 以下に参考サイトのメニュー用CSSを貼り付ける */
+.gMenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  margin-left: 10px;
+}
+/* メニューアイコンを画面右上に固定しています */
+.gMenu .menu-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  padding: 5px;
+  height: 12px;
+  width: 768px;
+margin-right: -300px;
+}
+/* メニューアイコン（三本線）の真ん中の線です */
+.gMenu .menu-icon .navicon {
+  background: #B71B26; /* 色は自由に変更可能です */
+  display: block;
+  height: 2px; /* 太さ */
+  width: 31px; /* 長さ */
+  position: relative;
+  transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+}
+/* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after {
+  background: #B71B26; /* 色は自由に変更可能です */
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+  width: 100%;
+}
+.gMenu .menu-icon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+.gMenu .menu-icon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+/* 表示されるメニューです */
+.gMenu .menu {
+  background-color: rgba(255,255,255,0.9);
+  overflow: hidden;
+  max-height: 0; /* ★最初は高さを0にして非表示状態に */
+  transition: max-height .6s; /* 表示されるときのアニメーション */
+  text-align: center;
+}
+/* メニュー部分のデザインです */
+.gMenu .menu li:first-of-type {
+  padding-top: 50px;
+}
+.gMenu .menu li a {
+  display: block;
+  padding: 24px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.gMenu .menu li a:hover {
+  background-color: #f4f4f4;
+}
+/* チェックボックスは常に非表示です */
+.gMenu .menu-btn {
+  display: none;
+}
+/* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+.gMenu .menu-btn:checked ~ .menu {
+  max-height: 338px; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+  transition: max-height .6s;
+}
+/* メニューボタンの中央の線を非表示に */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+
+/* メニューボタンの上下の線を45度傾けて✕印を作ります */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+.gMenu .menu-icon{
+top: 26px;
+}
+.gMenu .menu-icon .navicon,
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after{
+background: #333333;
+}
+
+
+ }
