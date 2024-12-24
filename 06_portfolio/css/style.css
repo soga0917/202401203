@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+.ffJosefin {
+  font-family: 'Josefin Sans',sans-serif;
+}
+.innerWrap {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+}
+.formSec {
+  background-color: #efe8d9;
+  padding-bottom: 60px;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 5px;
+  padding: 4px 8px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  vertical-align: baseline;
+  margin-right: 4px;
+}
+.attendRadio {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.attendRadio label {
+  margin: 0 20px;
+  font-size: 24px;
+}
+
+select {
+  background: #ffffff url(../images/arrow.png) no-repeat 98% 50%/17px 10px;
+}
+textarea {
+  height: 100px;
+  margin-bottom: 30px;
+}
+form > p {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.submitBtn {
+  text-align: center;
+
+}
+input[type="submit"] {
+  background-color: #10103b;
+  color: #ffffff;
+  padding: 18px 80px;
+  margin: -10px 0 0 0;
+}
+
+
+.dateSec {
+  margin-bottom: 480px;
+}
+.dateSec::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.jpg) no-repeat center/cover;
+  z-index: -1;
+}
+
+/*画像たち*/
+.imageBox{
+width: 600px;
+border-radius: 20px;
+}
+.slide {
+  margin : 0 auto;
+  border: 1px solid #10103b;
+  width: 600px;
+  background-color: #10103b;
+}
+img {
+  max-width: 100%;
+}
+.toolbar {
+  overflow: hidden;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+#prev {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+  background: url(../img/arrow-left.svg) no-repeat;
+}
+#next {
+  margin-left: 0.5rem;
+  width: 16px;
+  height: 16px;
+  background: url(../img/arrow-right.svg) no-repeat;
+}
+#page {
+  color: white;
+}
+/*画像たちここまで*/
+
+
+article{                               /*全体*/
+  width: 1920px;
+  /* height:1000px; */
+  /* background-color:#a4a8d4; */
+ background-image: url(../img/backLace.png);
+ border: 5px dotted #10103b;
+}
+
+main{
+  width: 1000px;
+  height:800px; 
+
+}
+
+header{                                 /*タイトル*/
+  width:1080px ;
+  height: 200px;  
+}
+
+h1{
+  margin:auto; 
+  opacity: 0.8;
+  width: 300px;
+}
+
+header h1  :hover{
+filter: opacity(0.6);
+}
+
+nav{                                  /*ページ移動*/
+  width:1080px ;
+  height: 216px;
+  display: flex;
+margin:0px 0px 0px 100px;
+}
+
+.nav :hover{
+  cursor: url(../img/rose.png), default;
+}
+
+a :hover{
+  filter: sepia(200%);
+  transition: .3s;
+  transform: rotate(-10deg);
+  cursor: url(../img/rose.png), default;
+}
+
+.top{ 
+  background-image: url(../img/topribon.jpg);                    
+width: 600px;
+height: 400px;
+border: 5px dotted #10103b;
+border-radius: 1em;
+}
+
+  section{                                  /*TOP画像*/
+  margin: 100px 0 0 380px;
+  border-radius: 20px;
+  width: 600px;
+}
+
+section p{
+  text-align: center;
+  font-weight: bold;
+  color: #001e43;
+  -webkit-text-stroke: 0.2px #ffffff;/*ベンダープレフィックス*/
+  animation-name: textanime;/*keyname*/
+  animation-duration:6s;/*最大再生時間*/
+  /* animation-iteration-count:infinite;/*繰り返し */
+}
+
+@keyframes textanime
+{
+ 0%{
+  opacity: 0;
+ }
+
+ 100%{
+  opacity: 1;
+ }
+}
+
+section .p{
+  text-align: center;
+  font-weight: bold;
+  color: #001e43;
+
+  animation-name: textanime;/*keyname*/
+  animation-duration:8s;/*最大再生時間*/
+  /* animation-iteration-count:infinite;/*繰り返し */
+}
+
+@keyframes textanime
+{
+ 0%{
+  opacity: 0;
+ }
+
+ 100%{
+  opacity: 1;
+ }
+}
+
+.link{
+  font-weight: bold;
+  text-align: left;
+  margin: 100px 0 0 0 ;
+  font-size: 25px;
+  color: #10103b;
+  /* -webkit-text-stroke: 0.8px #10103b;ベンダープレフィックス */
+  animation-name: textanime;/*keyname*/
+  animation-duration:8s;/*最大再生時間*/
+  /* animation-iteration-count:infinite;/*繰り返し */
+}
+
+@keyframes textanime
+{
+ 0%{
+  opacity: 0;
+ }
+
+ 100%{
+  opacity: 1;
+ }
+}
+
+
+.link :hover{
+  cursor: url(../img/rose.png), default;
+
+}
+.linkTitle {
+  font-size :22.5px; 
+  color: #10103b;
+}
+
+.linkTitle :hover{
+  text-decoration: underline;
+}
+.link small{
+  font-size :12.5px;
+  color: #10103b;
+}
+  
+
+footer{
+  width: 1080px;
+text-align: center;
+  font-weight: bold;
+  color: #10103b;
+margin: auto;
+}
+
+
+@media screen  and (max-width: 375px) 
+{
+  .link{
+    font-weight: bold;
+    text-align: left;
+    margin: 50px 0 0 0 ;
+    font-size: 25px;
+    color: #10103b;
+    /* -webkit-text-stroke: 0.8px #10103b;ベンダープレフィックス */
+    animation-name: textanime;/*keyname*/
+    animation-duration:8s;/*最大再生時間*/
+    /* animation-iteration-count:infinite;/*繰り返し */
+  }
+  
+
+
+
+
+  input[type="submit"] {
+    background-color: #10103b;
+    color: #ffffff;
+    padding: 15px 80px;
+    margin: -10px 0 0 0px;
+    height: 20px;
+  }
+
+  form {
+    width: 200px;
+    margin:30px auto;
+  }
+
+
+  .container{
+    width:375px ; 
+    margin: 0 0 0 -350px;
+  }
+  nav{                                  /*ページ移動*/
+    width:350px ;
+    display: flex;
+  margin:0px 0px 0px 8px;
+  }
+
+  nav img{
+    width:200px ; 
+    margin:0px 0px 0px 0px;
+  }
+  /*画像たち*/
+.imageBox{
+  width: 300px;
+  border-radius: 20px;
+  margin:0px 0px 0px 0px;
+
+  }
+  .slide {
+    margin : 0 auto;
+    border: 1px solid black;
+    width: 300px;
+    background-color: black;
+    margin:0px 0px 0px 0px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .toolbar {
+    overflow: hidden;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+  }
+  #prev {
+    margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
+    background: url(../img/arrow-left.svg) no-repeat;
+  }
+  #next {
+    margin-left: 0.5rem;
+    width: 16px;
+    height: 16px;
+    background: url(../img/arrow-right.svg) no-repeat;
+  }
+  #page {
+    color: white;
+  }
+  /*画像たちここまで*/
+  
+  
+  article{                               /*全体*/
+    width: 375px;
+     height:667px; 
+    /* background-color:#a4a8d4; */
+   background-image: url(../img/backLace.png);
+   border: 5px dotted #10103b;
+  }
+  
+  main{
+    width: 375px;
+  }
+  .top{
+    width: 300px;
+    margin: -100px 0  0px -350px;
+  }
+
+  .top p{
+    font-size: 12px;
+  }
+  header{                                 /*タイトル*/
+    width:375px ;
+  }
+  footer{
+    width:375px ;   
+  }
+}
+  
