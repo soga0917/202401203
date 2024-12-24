@@ -1,0 +1,1324 @@
+@charset "utf-8";
+/* その他 */
+/* スマホ用ハンバーガーメニューを非表示に */
+.hanMenu {
+  display: none;
+}
+
+/* ローディング画面 */
+
+.ppppPpppp{
+  display: none;
+}
+.underLogo img{
+  display: none;
+}
+.butt01 :hover{
+  filter: sepia(100%);
+}
+
+/* ローディング画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #007AB7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* ローディング画面のロゴ用 */
+.loadLogo {
+  z-index: 10;
+  width: 318px;
+  height: 128px;
+  animation-name: loadingAnime;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+/* ロゴのアニメーション設定 */
+@keyframes loadingAnime {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* ローディング画面を消去するときのクラス */
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*///////////////////////////// ここまで //////////////////////////*/
+
+/* モーダル01*/
+/* 背景の設定 */
+.modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+/* ウィンドウ本体の設定 */
+.modalWin {
+  display: none;
+  width: 1366px;
+  height: 604px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 122, 183, 0.9);
+  color: #fff;
+  z-index: 250;
+  animation-name: openClose;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+/* 写真サイズ */
+.modalWin .mainPhoto {
+  width: 600px;
+  height: 468px;
+}
+
+/* 閉じるボタンの設定 */
+.modalWin .closePhoto {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* ウィンドウ02本体の設定 */
+.modalWin02 {
+  display: none;
+  width: 1366px;
+  height: 604px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 122, 183, 0.9);
+  color: #fff;
+  z-index: 250;
+  animation-name: openClose;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+/* 写真サイズ */
+.modalWin02 .mainPhoto {
+  width: 600px;
+  height: 468px;
+}
+
+/* 閉じるボタンの設定 */
+.modalWin02 .closePhoto {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* ウィンドウ03本体の設定 */
+.modalWin03{
+  display: none;
+  width: 1366px;
+  height: 604px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 122, 183, 0.9);
+  color: #fff;
+  z-index: 250;
+  animation-name: openClose;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+/* 写真サイズ */
+.modalWin03 .mainPhoto {
+  width: 600px;
+  height: 468px;
+}
+
+/* 閉じるボタンの設定 */
+.modalWin03 .closePhoto {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* モーダルウィンドウ内の設定 */
+.modalCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:  40px 103px;
+}
+
+/* タイトル */
+.modalTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* タイトルの横幅を１００％にして折り返さなように */
+.modalTitleSec {
+  width: 100%;
+}
+
+/* テキストエリアの設定 */
+.modalTextSec {
+  width: 500px;
+  height: 468px;
+}
+
+/* テキストエリアの微調整 */
+.modalText {
+  width: 500px;
+  height: 192px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: -0.05rem;
+  line-height: 2rem;
+}
+
+
+/* 営業時間の設定 */
+.modalTime {
+width: 166px;
+height: 256px;
+margin: 0 auto;
+font-size: 20px;
+line-height: 2rem;
+}
+
+/* オープン時のアニメーション設定 */
+@keyframes openClose {
+  0% {
+      transform: scale(0);
+      transform-origin: bottom;
+      transform-origin: left;
+  }
+  100% {
+      transform: scale(1);
+      transform-origin: bottom;
+      transform-origin: left;
+  }
+}
+
+/* 全体の調整 */
+.footer { 
+  height: 349px;
+  width: auto;
+}
+
+/* 三分割していたナビゲーション、ロゴ、SNSを縦に戻す
+  ロゴの位置を自由に決めるためposition: relative;を設定 */
+.footerCon {
+  padding: 0 20px;
+  display: block;
+  position: relative;
+}
+
+/* ここで三分割を戻してます */
+.grid, .logoSec, .snsCon {
+  width: auto;
+}
+
+/* 国旗エリアの再設定 */
+.kokkiLogo {
+  padding: 20px 0;
+}
+.kokkiLogo img {
+  width: 32px;
+  height: 24px;
+}
+
+/* ナビゲーションエリアの再設定 */
+.footerNavi {  
+  font-size: 12px;
+  width: 195px;
+  height: 167px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.grid {
+  padding-bottom: 40px;
+}
+
+.footerNavi li {
+  height: 30px;
+  line-height: 1.5rem;
+}
+
+.footerNavi li:firsthild {
+  height: auto;
+}
+
+/* ロゴの再設定 */
+.underLogo img  {
+  width: 71px; 
+  height: 28px;
+}
+.underLogo {
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 12px;
+}
+
+/* SNSの再設定 */
+.snsBtn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+.snsBtn li {
+  margin: 0 10px;
+}
+/* コピーライトの再設定 */
+.copyright {
+  font-size: 10px;
+  width: auto;
+  padding: 12px 0;
+}
+
+.logoPc{
+  width: 400px;
+  height: 70px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+
+.logoMobile{
+   display: none;
+   background-repeat: no-repeat;
+}
+
+/* 以下をPC版エリアにコピペしてください */
+/*///////////////////////////// ここから //////////////////////////*/
+/* スマホ用ハンバーガーメニューを非表示に */
+.hanMenu {
+    display: none;
+}
+/*///////////////////////////// ここまで //////////////////////////*/
+
+/* その他 */
+body{                    
+   background-repeat: no-repeat;
+   max-width: 1366px; 
+   margin: auto;
+   overflow: auto;
+ }
+
+ h3{
+  font-size: 36px;
+ }
+
+section{
+  margin: auto;
+  margin: 100px  0px  -100px  100px;                                  /*上・右・下・左*/
+}
+
+/*ヘッダー仮ここから*/
+.headerSec{
+    width: 1366px;
+    height: 768px;
+    background-image: url(../images/top.png);   /*共通する上の画像*/
+    background-repeat: no-repeat;
+ }
+.taipei img{
+  margin: -60px 0px  0px  20px;             /*上・右・下・左*/        /*共通する上の画像*/
+  width: 154px; 
+}
+.introduction{
+  color: #fff;
+  font-weight: bold;
+  justify-content: flex-end;
+  margin: -100px 85px  10px  950px;          /*上・右・下・左*/      /*ヘッダーにかかる紹介文*/
+  width: 467px;
+}
+.taipeiBig img{
+  margin: -30px  0px  134.18px  363px;      /*上・右・下・左*/       /*でかい台北*/
+  width: 300px;
+  height: 539.82px;
+}
+.sns{
+  margin: -200px 85px  10px  60px;          /*上・右・下・左*/        /*SNSリンク*/
+}
+header ul{                                                                /*ナビ*/
+    display: flex;
+    margin: 24px 0 0 618px; 
+  }
+  a{
+ text-decoration: none;                                             /*ナビ色*/
+ color: #fff;
+}
+.sns a:hover{                                                       /*SNS触れるとセピア*/
+  filter: sepia(100%);
+}
+li{                                                               /*ナビ*/
+    margin: 40px 20px 0 0;
+    font-size: 19px;
+    list-style-type:none;  
+    font-weight: bold;
+    }
+li a:hover{
+      text-decoration: underline wavy rgb(255, 131, 126) 5px;     /*ナビ下線*/
+    }
+    .pc {
+      display: block;
+  }
+  .sp {
+      display: none;
+  }
+  
+/*ヘッダー仮ここまで*/
+
+/*ここからパンくず*/ 
+ .Breadcrumb {                                                     
+  padding: 1em;
+  margin: -45px  0px  0px  50px;      /*上・右・下・左*/ 
+   
+}
+.Breadcrumb span{
+  color: #333;
+}
+.BreadcrumbListGroup {                    /*横並び*/
+  display: flex;
+}
+.BreadcrumbListGroup > * + * {
+  margin-left: 0.5em;
+}
+.Breadcrumb
+ListGroup > * + *::before {
+  content: ">";
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+/*ここまでパンくず*/ 
+
+/*ここまでAttraction観光名所*/
+.sectionPei01{
+    height: 879px;
+    width: 1366px;
+}
+
+.sectionPei01 h3{
+  margin: 80px 0px  0px  0px;          /*上・右・下・左*/  
+}
+/*ここまでAttraction観光名所*/
+
+/*九份仮ここから*/
+
+.title{
+  margin: -10px 0px  -100px  100px;     /*上・右・下・左*/ 
+ } 
+ .midashi{
+  width: 530px;
+  height: 96px;
+  margin: 20px 0px  0px  0px;          /*上・右・下・左*/ 
+ }
+ .midashi02{
+  width: 530px;
+  height: 96px;
+  margin: 20px 0px  0px  700px;         /*上・右・下・左*/ 
+ }
+
+.kyuuhun01{
+  margin: 5px 0px  0px  0px;          /*上・右・下・左*/ 
+}
+.kyuuhun02{
+  width: 600px;
+  display: flex;
+  margin: 10px 0px  0px  0px;          /*上・右・下・左*/       
+  justify-content: space-around;   
+}
+.ktext{
+  margin: -500px  100px  0px 700px;          /*上・右・下・左*/ 
+  height: 360px;
+  width: 500px;
+  font-size: 20px;
+}
+
+.ktext p{
+  margin: 0px  0px  20px 0px;          /*上・右・下・左*/ 
+  padding: 0px  0px  0px 30px;          /*上・右・下・左*/ 
+  background-color: rgba(108,186,216,0.2);
+  text-align: left;  
+}
+.osusume{
+  text-align: center;
+
+}
+
+/*九份仮ここまで*/
+
+/*台北101仮ここから*/
+.sectionPei02{
+  height: 879px;
+  width: 1366px;
+}
+.taipei01{
+  margin: 5px 0px  0px  0px;          /*上・右・下・左*/ 
+}
+
+
+.taipei02{
+  width: 600px;
+  display: flex;
+  margin: 10px 0px  0px  0px;          /*上・右・下・左*/       
+  justify-content: space-around; 
+}
+.ttext{
+  margin: -500px  100px  0px 700px;          /*上・右・下・左*/ 
+  padding: 0px  0px  0px  0px;          /*上・右・下・左*/ 
+
+  width: 500px;
+  height: 360px;
+ font-size: 20px;
+
+}
+
+.ttext p{
+  margin: 0px  0px  20px 0px;          /*上・右・下・左*/ 
+  padding: 0px  0px  0px 40px;          /*上・右・下・左*/ 
+  background-color: rgba(108,186,216,0.2);
+}
+
+/*ここまで*/
+
+
+/*ナイトマーケット仮ここから*/
+.yoi03{
+  display: none;
+}
+.yoi04{
+  display: none;  
+}
+
+.NightMarket{
+  margin: -100px  50px 100px  30px;     /*上・右・下・左*/   
+}
+.title02{
+  margin: 211px  0px  -100px  800px;     /*上・右・下・左*/ 
+} 
+.sectionPei03{
+  height: 879px;
+  width: 1366px;
+  /*border-top:3px solid #333;       上に線をひいている
+  border-bottom: 3px solid #333;    下に線をひいている*/
+  margin: auto;
+}
+.ttext02 p{
+  margin: 25px  0px  25px 50px;          /*上・右・下・左*/ 
+  letter-spacing: .05em;                    /*行間*/
+  line-height: 150%;
+  width: 500px;
+  font-size: 20px;
+  /*border-top:3px solid #333;       上に線をひいている
+  border-bottom: 3px solid #333;    下に線をひいている*/
+  padding: 10px;
+}
+.ttext02 img{
+  margin: 65px  0px  0px 50px;          /*上・右・下・左*/ 
+ }
+.midashi03{
+  width: 530px;
+  height: 96px;
+  margin: 20px  0px  0px 700px;         /*上・右・下・左*/ 
+ }
+.midashi03 p img{
+  height: 264px;
+  width: 540px; 
+}
+.midashi03 p img{
+height: 264px;
+width: 540px; 
+}
+
+.line04 {
+  width: 500px;
+  border-top: solid 4px #333;
+  margin: 10px  0px  10px  60px;     /*上・右・下・左*/
+  }
+
+.butt01,.burro02{
+display: flex;
+width: 295px;
+height: 126px ;
+}
+
+.medama{
+ 
+  margin: 50px  0px  100px  0px;     /*上・右・下・左*/ 
+}
+
+/*ナイトマーケット仮ここまで*/
+
+
+/*access仮ここから*/
+.sectionPei05{
+  margin: 120px  0px  0px   0px;          /*上・右・下・左*/   
+}
+.title03 img{
+  margin: 0px  0px  0px  0px;     /*上・右・下・左*/ 
+}
+
+.title03 {
+  margin: 0px  0px  0px  250px;     /*上・右・下・左*/ 
+}
+
+
+.title03Saku img{
+  width: 530px;
+  height: 96px;
+  margin:-100px  0px  0px  100px;     /*上・右・下・左*/  
+}
+
+.sectionPei05 p{
+  margin: 80px  0px  10px  225px;     /*上・右・下・左*/
+
+}
+
+.line {
+  width: 500px;
+  border-top: solid 4px #333;
+  margin: 40px  0px  0px  125px;     /*上・右・下・左*/
+  }
+
+  .line03 {
+    width: 500px;
+    border-top: solid 4px #333;
+    margin: 40px  0px  0px  450px;     /*上・右・下・左*/
+    }
+  
+
+.access{   
+    height: 879px;
+    width: 1366px;
+
+ 
+  }
+.access img{
+    width: 100%;
+    height: 336px;
+    margin: 0px  0px  0px 15px;          /*上・右・下・左*/ 
+  }
+  
+
+  .manyCar{
+    margin: 80px  150px  0px  110px;          /*上・右・下・左*/  
+  }
+
+  .accessText {
+    display: flex;
+    width: 1300px; 
+    justify-content: center;
+    height: 406px;
+    margin: 0px  0px  20px  0px;          /*上・右・下・左*/ 
+  }
+
+  .accessText p {
+    margin: 0px  60px  0px  200px;          /*上・右・下・左*/ 
+    font-size: 24px;
+    width: 400px;
+    height: 332px;
+  }
+
+  .accessText02 {
+    display: flex;
+    width: 1300px;
+    height: 406px;
+    justify-content: center;
+    margin: 0px  0px  275px  0px;          /*上・右・下・左*/ 
+  }
+
+  .accessText02 p {
+    margin: 0px  60px  0px  200px;          /*上・右・下・左*/ 
+    font-size: 24px;
+    width: 400px;
+    height: 332px;
+    
+  }
+
+.accessText02 p img {
+width: 246px;
+height: 155px;
+margin: 73px  0px  80px  80px;          /*上・右・下・左*/ 
+  }
+
+
+.aText{
+  margin: 80px  0px  0px  -40px;          /*上・右・下・左*/   
+}
+
+/*access仮ここまで*/
+
+
+/*フッターエリア開始*/  
+
+.footer img{
+width: 64px;
+height: 48px;
+}
+.footer {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: 400;
+  font-style: normal;
+ align-items: flex-end;
+ justify-content: center;
+ margin: 400px   0px  0px  -40px;          /*上・右・下・左*/
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    width: 300px;
+    height: 292px;
+}   
+footer a:hover {  /*カーソルを合わせると赤いライン*/
+    text-decoration:underline;
+    color: #FF0000;
+}  
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.footer { /*背景と文字の色*/
+    padding: 2rem;
+    font-size: 15px;
+    color: #fff;
+    background: #007AB7;
+    height: 469px;
+}
+.footerNavi {  /*文字の太さ*/
+    font-weight: bold;
+    margin: 80px  0px  10px 103px;          /*上・右・下・左*/     
+}
+.footerNavi-heading {
+    font-weight: 600;
+} 
+.footerNavi li {
+    margin-bottom: 0.75rem;
+    border-bottom: 3px solid #6CBAD8;    /*下に線をひいている*/ 
+}
+
+.kokkiLogo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 256px;
+    height: 103px;
+    margin: -150px  0px  0px  0px;          /*上・右・下・左*/  
+}
+
+.underLogo img{
+  width: 256px;
+  height: 103px; 
+  margin: -50px  100px  0px  10px;          /*上・右・下・左*/    
+  }
+
+.underLogo {
+    display: flex;
+    justify-content: center;
+}
+.snsBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin: -100px  0px  0px  1100px;          /*上・右・下・左*/ 
+    width: 182px;
+    height: 32px;
+}
+
+.snsBtn a:hover{                                                       /*SNS触れるとセピア*/
+  filter: sepia(100%);
+}
+
+.snsBtn li {
+    margin: 20px;
+}
+.copyright {
+    text-align: center;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.kokki img{
+ 
+  width: 95px;
+  height: 61px;
+}
+
+/*フッターここまで！*/
+
+.copyright{ 
+margin: 80px  0px  0px  0px;          /*上・右・下・左*/ 
+}
+
+.line02{
+
+  border-top: solid 4px  #6CBAD8;
+  margin: 90px  0px  0px  0px;          /*上・右・下・左*/ 
+}
+ 
+ @media screen  and (max-width:375px) {
+/*その他*/
+
+.snsBtn img{
+  display: none;
+}
+
+
+.kokkiLogo{
+  display: none;
+}
+
+.logoMobile{
+  width: 295px;
+  height: 225px;
+  display: block;
+}
+
+.logoPc{
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+article{
+  width:375px;
+  height: 667px;
+  margin: auto;
+ }
+
+ header{
+  background-image: none;
+  width:375px;
+ }
+ .taipei img{          
+  width: 154px; 
+
+}
+.headerSec{
+  background-image: url(../images/herofullimg.png);
+}
+
+ /*///////////////////////// ハンバーガーメニュー //////////////////////*/
+ .hanMenu {
+  display: block;
+}
+/* ハンバーガーメニューの三アイコン画像 */
+.hanNavOpen {
+  right: 0;
+  margin: 4px;
+  position: fixed;
+  z-index: 99;
+}
+/* ハンバーガーメニュー本体 */
+.hanNav {
+  position: fixed;
+  right: -225px;
+  top: 0;
+  height: 677px;
+  width: 225px;
+  background-color: #000;
+  opacity: .8;
+  color: #f4f4f4;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  z-index: 99;
+  transition: transform 0.3s;
+}
+
+.hanNav p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.hanNav li {
+  line-height: 1.5rem;
+  font-size: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.hanLogoSec {
+  height: 132px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ハンバーガーメニューのバツ */
+.batu img {
+  width: 48px;
+  height: 48px;
+}
+.hanLogo img {
+  height: 40px;
+  width: 101px;
+}
+/* javascript用 */
+/* オープンボタンを押したときの処理 */
+.open {
+  transform: translate(-225px);   /*トランスフォームでスライド*/
+}
+
+/* オープンボタンが押された時三ボタンを隠す */
+.openDel {
+  transform: translate(50px);
+}
+
+/*////////////////////////// ハンバーガーメニューここまで//////////////////// */
+
+/*その他ここまで*/
+/*ヘッダー仮ここから*/
+header{
+  margin: 0px 0px 0px 0px;          /*上・右・下・左*/   
+}
+
+.taipei{
+margin: -360px 0px 0px 0px;          /*上・右・下・左*/  
+}
+.taipei img{ 
+  background-repeat: no-repeat;
+  width: 145px; 
+  }
+  .sns{
+    margin: -100px  90px  10px  30px;          /*上・右・下・左*/        /*SNSリンク*/
+    }
+.introduction{
+font-size: 12px;
+color: #fff;
+font-weight: bold;
+justify-content: flex-end;
+margin: 0px  0px  0px  80px;          /*上・右・下・左*/      /*ヘッダーにかかる紹介文*/
+width: 467px;
+}
+.taipeiBig img{
+margin: 300px  0px 0px  88px;      /*上・右・下・左*/       /*でかい台北*/
+width: 199px;
+height: 372px;
+}
+header ul{                                                                /*ナビ*/
+  display: flex;
+  margin: 24px 0px 0px 618px;  /*上・右・下・左*/ 
+}
+a{
+text-decoration: none;                                             /*ナビ色*/
+color: #fff;
+}
+.sns a:hover{                                                       /*SNS触れるとセピア*/
+filter: sepia(100%);
+}
+li{                                                               /*ナビ*/
+  margin: 40px 20px 0 0;
+  font-size: 24px;
+  list-style-type:none;  
+  font-weight: bold;
+  }
+li a:hover{
+    text-decoration: underline wavy rgb(255, 131, 126) 5px;     /*ナビ下線*/
+  }
+/*ヘッダー仮ここまで*/
+
+/*ここからパンくず*/ 
+.Breadcrumb {                                                     
+margin: -150px 0px  0px -20px; /*上・右・下・左*/ 
+width: 375px;
+
+}
+
+.Breadcrumb span {                                                     
+font-size: 13px;  
+margin: auto;
+}
+
+.Breadcrumb span{
+  color: #333;
+}
+.BreadcrumbListGroup {                    /*横並び*/
+  display: flex;
+}
+.BreadcrumbListGroup > * + * {
+  margin-left: 0.5em;
+
+}
+.BreadcrumbListGroup > * + *::before {
+  content: ">";
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+/*ここまでパンくず*/ 
+/*九份仮ここから*/
+
+
+.sub01 img{
+  display: none;
+}
+.sub02 img{
+  display: none;
+}
+
+.title img{
+  width: 145px;
+
+  margin: 0px  0px  0px -80px;     /*上・右・下・左*/ 
+  padding: 0px  0px  80px  0px;     /*上・右・下・左*/ 
+}
+
+.midashi img{
+  width: 220px;
+  height: 40px;
+ 
+}
+
+
+.title{
+  margin: 0px  0px  -100px  100px;     /*上・右・下・左*/ 
+
+ } 
+ .midashi{
+  width: 530px;
+  height: 96px;
+  margin: -10px  0px  10px  -25px;          /*上・右・下・左*/ 
+ }
+
+
+ .midashi02{
+  width: 530px;
+  height: 96px;
+  margin: 20px 0px  0px  700px;         /*上・右・下・左*/ 
+ }
+
+.kyuuhun01{
+  margin: 5px 0px  0px  0px;          /*上・右・下・左*/ 
+}
+
+.kyuuhun01 img{
+width: 295px; 
+margin: -120px 0px  0px  -50px;          /*上・右・下・左*/ 
+}
+.kyuuhun02{
+  width: 137px;
+  height: 225px;
+  display: flex;
+  margin: 10px 0px  0px  0px;          /*上・右・下・左*/       
+  justify-content: space-around; 
+  display: none;  
+}
+
+.ktext{
+  margin: 0px  0px  2000px  -50px;          /*上・右・下・左*/ 
+
+  height: 360px;
+  width: 295px;
+  font-size: 20px;
+
+}
+
+.ktext p{
+  margin: 10px  0px  20px 0px;          /*上・右・下・左*/ 
+  padding: 0px  5px  0px 0px;          /*上・右・下・左*/ 
+  background-color: rgba(108,186,216,0.2);
+  text-align: left;  
+  font-size: 12px;
+}
+.osusume{
+  text-align: center;
+}
+
+.osusume p{
+  text-align: center;
+  margin: 10px  0px  20px 0px;          /*上・右・下・左*/ 
+}
+
+.kyumiji img{
+  width: 48px;
+  height: 24px;
+}     
+
+
+/*台北101仮ここから*/
+
+.sectionPei02 h3{
+  font-size: 24px;
+  text-align: 0px  0px  0px 0px;          /*上・右・下・左*/
+}
+
+.taipei01 img{
+  display: none;
+}
+
+.taipeitower {
+  margin: 0px  0px  0px -60px;          /*上・右・下・左*/
+}
+
+.taipeitower01 {
+display: none;
+}
+
+.taipeitower02 {
+display: none;
+}
+
+.ttext{
+  margin: 0px  0px  2000px  -60px;          /*上・右・下・左*/ 
+  height: 360px;
+  width: 295px;
+  font-size: 12px;
+
+}
+
+.ttext p{
+margin: 10px  0px  20px 0px;          /*上・右・下・左*/ 
+padding: 0px  5px  0px 0px;          /*上・右・下・左*/ 
+background-color: rgba(108,186,216,0.2);
+text-align: left;  
+font-size: 12px;
+}
+
+.osusume p {
+  margin: 10px;
+}
+
+
+/*ナイトマーケット仮ここから*/
+
+
+.NightMarket{
+  margin: 0px  0px  2000px  -60px;          /*上・右・下・左*/ 
+  height: 134px;
+  width: 200px;
+}
+.yoichiimgMatome {
+display: none;
+}
+.yoichiimgMatome02 img{
+ margin: 0px  0px  2000px  -60px;          /*上・右・下・左*/ 
+width: 183px;
+  }
+
+
+.title02{
+  margin: 100px  0px  0px 180px;     /*上・右・下・左*/ 
+  width: 127px; 
+} 
+.title02 img{
+  margin: 0px  0px  -35px 0px;     /*上・右・下・左*/ 
+  width: 127px; 
+} 
+.sectionPei03{
+  height: 879px;
+  width: 375px;
+  /*border-top:3px solid #333;       上に線をひいている
+  border-bottom: 3px solid #333;    下に線をひいている*/
+  margin: auto;
+}
+.ttext02 p{
+  margin: 25px  0px  25px 50px;          /*上・右・下・左*/ 
+  letter-spacing: .05em;                    /*行間*/
+  line-height: 150%;
+  width: 500px;
+  font-size: 12px;
+  /*border-top:3px solid #333;       上に線をひいている
+  border-bottom: 3px solid #333;    下に線をひいている*/
+  padding: 10px;
+}
+.ttext02 img{
+  margin: 65px  0px  0px 50px;          /*上・右・下・左*/ 
+ }
+.midashi03{
+  margin: 0px  0px  0px  130px;     /*上・右・下・左*/ 
+ }
+.midashi03 p img{
+  height: 264px;
+  width: 540px; 
+}
+.midashi03 img{
+width: 223px; 
+
+}
+
+.line04 {
+  width: 222px;
+  border-top: solid 1px #333;
+  margin: 10px  0px  10px  60px;     /*上・右・下・左*/
+  }
+.ttext02{
+  margin: -100px  -100px  0px  60px;     /*上・右・下・左*/ 
+}
+
+
+.bttop{
+  background-Image: url(images/pcYoichi011.png);
+  background-repeat: no-repeat;
+  width: 183px;
+  height: 200px;
+  margin: 50px  100px  -80px 150px ; /*上・右・下・左*/ 
+}
+.bttom{
+  background-Image: url(images/pcYoichi022.png);
+  background-repeat: no-repeat;
+  width: 183px;  
+  height: 200px;
+  margin: -40px  100px  -50px  70px ; /*上・右・下・左*/ 
+}
+
+
+
+.buttmatome{
+  margin:  0px   0px  10px  90px;     /*上・右・下・左*/ 
+  width: 295px;
+}
+
+.butt01 img ,.butt02 img {
+  width: 131px;
+  height: 48px;
+  margin: 0px  0px  0px  32px;     /*上・右・下・左*/ 
+}
+
+
+
+/*ナイトマーケット仮ここまで*/
+
+/*access仮ここから*/
+.sectionPei05{
+  margin: 120px  0px  0px   0px;          /*上・右・下・左*/   
+}
+.title03 img{
+  margin: 0px  0px  0px  0px;     /*上・右・下・左*/ 
+  width: 127px;
+}
+
+.title03 {
+  margin: 0px  0px  0px  0px;     /*上・右・下・左*/  
+  }
+.title03Saku{
+  margin: -150px  0px  0px  -15px;     /*上・右・下・左*/   
+}
+.title03{
+  display: none;
+}
+.title03Saku img{
+  width: 220px;
+  height: 40px;
+}
+
+.sectionPei05 p{
+  margin: 10px  0px  0px  60px;     /*上・右・下・左*/
+
+}
+
+.line {
+display: none;
+  }
+
+  .line03 {
+  display: none
+    }
+  
+
+
+.access img{
+    width: 100%;
+    height: 336px;
+    margin: 0px  90px  0px 15px;          /*上・右・下・左*/ 
+  }
+  
+
+  .manyCar{
+    margin: 80px  0px  0px  10px;          /*上・右・下・左*/  
+  }
+
+  .manyCar img{
+    width: 335px;
+    height: 134px;
+  }
+
+  .accessText {
+    display: block;
+    width: 0px; 
+    justify-content: center;
+    margin: -50px  0px  0px -70px;          /*上・右・下・左*/ 
+    width: 223px;
+    height: 50px;
+
+  }
+
+  .accessText p {
+    margin: -20px  0px  0px  px;          /*上・右・下・左*/ 
+    font-size: 12px;
+    height: 100px;
+    width: 223px;
+  }
+ 
+
+  .accessText02 {
+    display: block;
+    width: 0px; 
+    justify-content: center;
+    margin: 200px  0px  0px -70px;          /*上・右・下・左*/ 
+    width: 223px;
+    height: 50px;
+
+  }
+
+  .accessText02 p {
+    margin: 0px  0px  0px  px;          /*上・右・下・左*/ 
+    font-size: 12px;
+    height: 150px;
+    width: 223px;
+  }
+
+.accessText02 p img {
+width: 246px;
+height: 155px;
+margin: 00px  0px  0px  0px;          /*上・右・下・左*/ 
+  }
+
+
+.aText{
+  margin: 100px  0px  0px  -40px;          /*上・右・下・左*/   
+}
+
+/*access仮ここまで*/
+
+
+
+
+
+}
